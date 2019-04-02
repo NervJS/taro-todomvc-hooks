@@ -1,0 +1,19 @@
+.filters-link {
+  display: flex;
+  padding: 6px 14px;
+  // transparent 不支持？？ TODO
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.filters-link:hover {
+  border-color:  #efd5d5;
+}
+
+.selected {
+  border-color:  #efd5d5;
+  border-width: 2px;
+}

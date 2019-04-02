@@ -1,29 +1,19 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
-import './index.scss'
+import { View } from '@tarojs/components'
+import Header from '../../components/header'
+import MainSection from '../../components/main-section'
 
 export default class Index extends Component {
-
   config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: 'TodoMVC'
   }
-
-  componentWillMount () { }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
 
   render () {
     return (
-      <View className='index'>
-        <Text>Hello world!</Text>
+      <View className='container'>
+        <Header />
+        <MainSection />
       </View>
     )
   }
 }
-

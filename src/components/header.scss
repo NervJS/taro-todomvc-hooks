@@ -1,0 +1,51 @@
+.title {
+  width: 100%;
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.55);
+  //-webkit-text-rendering: optimizeLegibility;
+  //-moz-text-rendering: optimizeLegibility;
+  //text-rendering: optimizeLegibility;
+}
+
+.header-title-wrap {
+  display: flex;
+  background-color: #F5F5F5;
+}
+
+.textinput-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+}
+
+.textinput-wrap-icon {
+  font-size: 44px;
+  color: #e6e6e6;
+  padding: 20px 54px 20px 54px;
+  transform: rotate(90deg);
+}
+
+.todo-text-input {
+  flex: 1;
+}
+
+.textinput-wrap-input {
+  flex: 1;
+}
+
+.filters {
+  display: flex;
+  font-weight: 400;
+  margin: 0 10px;
+  padding: 0;
+  flex-direction: row;
+  background-color: #F5F5F5;
+}
+
+.filters-item {
+  margin: 6px;
+}
+
