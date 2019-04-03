@@ -5,9 +5,10 @@ import { TodoStore, getFilteredTodos, useStore } from '../store/store'
 
 const TodoList = () => {
   const { visibilityFilter } = useStore(TodoStore)
+  const todos = getFilteredTodos(visibilityFilter)
   return (
     <View className='todo-list'>
-      {getFilteredTodos(visibilityFilter).map(todo => <TodoItem key={todo.id} todo={todo} />)}
+      {todos.map((todo, i) => <TodoItem key={todo.id} todo={todo} isLast={i === todos.length - 1} />)}
     </View>
   )
 }
