@@ -1,4 +1,4 @@
-import Taro, { useState } from '@tarojs/taro'
+import React, { useState } from 'react'
 import { Input } from '@tarojs/components'
 import classnames from 'classnames'
 

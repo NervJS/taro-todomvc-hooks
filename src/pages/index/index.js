@@ -1,19 +1,24 @@
-import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import React, { Component } from 'react'
+import { View, Button } from '@tarojs/components'
 import Header from '../../components/header'
 import MainSection from '../../components/main-section'
 
-export default class Index extends Component {
-  config = {
-    navigationBarTitleText: 'TodoMVC'
-  }
+class Index extends Component {
+  fuck = 'fuck'
 
+  onFuck = () => {
+    const t = this
+    debugger
+  }
   render () {
     return (
       <View className='container'>
+        <Button onClick={this.onFuck}>fuck</Button>
         <Header />
         <MainSection />
       </View>
     )
   }
 }
+
+export default Index

@@ -1,4 +1,4 @@
-import Taro, { useState } from '@tarojs/taro'
+import React, { useState } from 'react'
 import { View, Label, Text } from '@tarojs/components'
 import classnames from 'classnames'
 import TodoTextInput from './todo-text-input'
@@ -33,12 +33,16 @@ function TodoItem ({ todo, isLast }) {
               <View className='toggle'>
                 <Label
                   className={classnames({ label: true, checked: todo.completed })}
-                  onClick={() => completeTodo(todo.id)}
+                  onTap={() => {
+                    let t = todo.text
+                    // debugger
+                    completeTodo(todo.id)
+                  }}
                 >
                 </Label>
                 <Text
                   className='text'
-                  onClick={e => {
+                  onTap={e => {
                     const currentTime = e.timeStamp
                     const gap = currentTime - lastClickTime
                     if (gap > 0 && gap < 300) { // double click
@@ -49,7 +53,7 @@ function TodoItem ({ todo, isLast }) {
                 >
                   {todo.text}
                 </Text>
-                <Text className='destroy' onClick={() => deleteTodo(todo.id)} />
+                <Text className='destroy' onTap={() => deleteTodo(todo.id)} />
               </View>
             )
         }

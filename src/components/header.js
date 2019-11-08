@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import React from 'react'
 import { View, Text } from '@tarojs/components'
 import TodoTextInput from './todo-text-input'
 import { addTodo, completeAllTodos } from '../store/store'
@@ -16,7 +16,7 @@ function Header () {
       {FILTER_TITLES.map(filter => <FilterLink filter={filter} key={filter} />)}
     </View>
     <View className='textinput-wrap'>
-      <Text className='textinput-wrap-icon' onClick={() => completeAllTodos()}>❯</Text>
+      <Text className='textinput-wrap-icon' onTap={() => completeAllTodos()}>❯</Text>
       <View className='textinput-wrap-input'>
         <TodoTextInput
           newTodo

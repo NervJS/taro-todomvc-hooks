@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import React from 'react'
 import { View, Text } from '@tarojs/components'
 import './footer.scss'
 
@@ -10,7 +10,7 @@ function Footer ({ activeCount, completedCount, onClearCompleted }) {
         <Text>{activeCount || 'No'}</Text> {itemWord}{' '}left
       </View>
       {!!completedCount && (
-        <Text className='clear-completed-text' onClick={onClearCompleted}>
+        <Text className='clear-completed-text' onTap={onClearCompleted}>
           Clear completed
         </Text>
       )}

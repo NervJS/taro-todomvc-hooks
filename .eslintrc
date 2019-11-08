@@ -1,7 +1,12 @@
 {
+  "settings": {
+    "react": {
+      "pragma": "React"
+    }
+  },
   "extends": ["taro", "standard"],
   "rules": {
-    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "no-unused-vars": ["error", { "varsIgnorePattern": "React" }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
     "taro/no-stateless-component": false
   },
