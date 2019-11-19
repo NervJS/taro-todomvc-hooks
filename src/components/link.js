@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import React from 'react'
 import { Text } from '@tarojs/components'
 import classnames from 'classnames'
 import { setVisibilityFilter, useStore, TodoStore } from '../store/store'

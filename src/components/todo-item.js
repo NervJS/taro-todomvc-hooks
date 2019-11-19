@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Label, Text } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import classnames from 'classnames'
 import TodoTextInput from './todo-text-input'
 import { deleteTodo, completeTodo, editTodo } from '../store/store'
@@ -31,15 +31,13 @@ function TodoItem ({ todo, isLast }) {
             )
             : (
               <View className='toggle'>
-                <Label
+                <Text
                   className={classnames({ label: true, checked: todo.completed })}
                   onTap={() => {
-                    let t = todo.text
-                    // debugger
                     completeTodo(todo.id)
                   }}
                 >
-                </Label>
+                </Text>
                 <Text
                   className='text'
                   onTap={e => {
