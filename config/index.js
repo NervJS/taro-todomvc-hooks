@@ -52,6 +52,7 @@ const config = {
     },
     webpackChain (chain) {
       chain.merge({
+        devtool: 'source-map',
         resolve: {
           alias: {
             '@tarojs/components': '@tarojs/components/mini',
