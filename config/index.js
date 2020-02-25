@@ -9,7 +9,7 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: `dist`,
-  framework: 'nerv',
+  framework: 'react',
   defineConstants: {
   },
   copy: {
